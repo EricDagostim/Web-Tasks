@@ -34,12 +34,38 @@ main{
     border-radius: 10px;
 }
 
+.scroll-side{
+    overflow-y: auto;
+    height: 79vh;
+    padding-right: 10px;
+}
+
+body .scroll-side::-webkit-scrollbar {
+    width: 5px;
+}
+
+body .scroll-side::-webkit-scrollbar-track {
+    background: none;       
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+  
+body .scroll-side::-webkit-scrollbar-thumb {
+    background-color: #ffffff20;    
+    border-radius: 20px;    
+    border: none;  
+    
+    
+    
+}
 
 
 .container .side-bar{
+    user-select: none;
     width: 200px;
     height: 85vh;
-    padding: 20px ;
+    padding: 20px 10px;
 
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -53,7 +79,12 @@ main{
     border-bottom: 1px solid #ffffff28;
     border-radius: 5px;
     margin-bottom: 10px;
-    
+    transition: 200ms;
+}
+
+
+.card:hover{
+   background-color: #ffffff28 ;
 }
 
 .perfil{

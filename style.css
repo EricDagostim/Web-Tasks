@@ -15,7 +15,51 @@ main{
     background-image: url('img/img-fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100vw;
+    
+}
+
+.modal{
+    z-index: 9999;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    
+    background-color: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Lato', sans-serif;
+}
+
+
+.modal-content{
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 400px;
+    height: 80vh;
+}
+
+.body-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.body-modal .img-modal{
+    background-image: url('img/perfil-01.jpg');
+    width: 100%;
+    height: 200px;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .align-bars{
@@ -111,10 +155,23 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 }
 
 .card{
-    border-bottom: 1px solid #ffffff28;
+    /* border-bottom: 1px solid #ffffff28; */
     border-radius: 5px 5px 0px 0px;
     margin-bottom: 10px;
     transition: 200ms;
+    
+    /* background-color: rgba(255, 255, 255, 0.301); */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px) ;
+
+/* 
+    -webkit-box-shadow: 0px 10px 24px -4px rgba(0,0,0,0.38);
+-moz-box-shadow: 0px 10px 24px -4px rgba(0,0,0,0.38);
+box-shadow: 0px 10px 24px -4px rgba(0,0,0,0.38); */
+
+/* -webkit-box-shadow: 0px 3px 31px -4px rgba(0,0,0,0.54);
+-moz-box-shadow: 0px 3px 31px -4px rgba(0,0,0,0.54);
+box-shadow: 0px 3px 31px -4px rgba(0,0,0,0.54); */
 }
 
 
@@ -163,7 +220,7 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 }
 
 .card:hover{
-   background-color: #ffffff28 ;
+   background-color: #0e0e0e62 ;
 }
 
 .card:hover .btn-attr{
@@ -172,9 +229,6 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     width: 20px; */
     transition: 300ms;
 }
-
-
-
 
 
 /* estilo barra de tarefas/atividades */

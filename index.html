@@ -9,6 +9,9 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    </script>
 </head>
 <body>
     <main>
@@ -26,8 +29,15 @@
                 <div class="img-modal"></div>
                 <h2>Pessoa</h2>
                 <p>Pessoa da Silva Sartori</p>1
-                <p>(Desenvolvedora Web)</p>
+                
+                <p><i class="fa-solid fa-laptop-code"></i> - Desenvolvedor(a) Web</p>
                 <p>Email : pessoa@gmail.com</p>
+                
+                <div class="bio" style="text-align: center; padding: 10px;">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, reprehenderit debitis ipsam dolorum unde nemo aut repellendus</p>
+                </div>
+
+                
                 
               </div>
             </div>
@@ -46,7 +56,7 @@
                 <div class="scroll-bar">
         
                     <div class="card">
-                        <a class="perfil">
+                        <a class="perfil" id="perfil">
                             <div class="icon"></div>    
                             <div class="infos-perfil">
                                 <h2>Pessoa</h2>
@@ -614,3 +624,18 @@
     </main>
 </body>
 </html>
+
+<script>
+    // $('#perfil').click(function(){
+    //     $('#modal-user').css({
+    //         'display' : 'flex'
+    //     })
+    // })
+
+    // $('#modal-user').click(function(){
+    //     $('#modal-user').css({
+    //         'display' : 'none'
+    //     })
+    // })
+</script>
+

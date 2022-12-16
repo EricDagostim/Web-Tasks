@@ -7,6 +7,7 @@
     text-decoration: none;
 }
 
+
 body{
     overflow-y: hidden;
 }
@@ -141,7 +142,7 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 
 .vertical-bar {
     user-select: none;
-    padding: 20px 10px;
+    padding: 20px 5px 0px 10px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
@@ -158,8 +159,6 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     background-color: #ffffff25 !important;
 }
 
-
-
 .perfil{
     font-family: 'Lato', sans-serif;
     display: flex;
@@ -169,6 +168,11 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     padding: 10px;
     transition: 300ms;
 
+    text-decoration:  none;
+
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
     
 }
 
@@ -185,6 +189,7 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 .perfil .infos-perfil h2{
     color: #ffffffcc;
     font-size: 1rem;
+    margin: 0;
 }
 
 .perfil .infos-perfil .status{
@@ -212,6 +217,85 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     transition: 300ms;
 }
 
+.image-modal{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.modal-header{
+    background-image: url('img/perfil-01.jpg');
+    height: 250px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px !important;
+    flex-direction: column;
+}
+
+.modal-header button{
+    margin: -35px !important;
+    color: #fff !important;
+    background-color: #fff !important;
+}
+
+.modal-header button:focus{
+    background-color: rgba(255, 255, 255, 0.199) !important;
+    box-shadow: none;
+}
+
+.modal-content{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-body .user-surname{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    
+}
+
+.modal-body .user-office{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #164b0ffa ;
+    padding: 2px 5px;
+    border-radius: 5px;
+    
+    background-color: #22d30b34;
+}
+
+/* .modal-body .user-email{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0b68dffa ;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: #0b68d334;
+}
+
+.modal-body .user-bio{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3a3a3a ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: justify;
+    background-color: #0b68d309;
+} */
+
+
+
+
+
+
+
+/* ---- */
 
 .btn-attr{
     background-color: rgb(128, 172, 41);
@@ -233,20 +317,3 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 }
 
 /* estilo barra de tarefas/atividades */
-
-
-@keyframes load-modal {
-    0%{
-        backdrop-filter: blur(0px);
-        -webkit-backdrop-filter: blur(0px);
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    100%{
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.473);
-
-    }
-
-}

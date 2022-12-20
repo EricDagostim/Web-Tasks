@@ -91,68 +91,60 @@ main{
 }
 
 .principal-title{
-    border: 1px solid #ffffff20;
-    border-radius: 10px;
-}
-
-.title-squad i{
-    display: none;
-}
-
-.title-squad:hover h2{
-    display: none;
+    /* background-color:  #ffffff20; */
+    background-color: #0e0e0e62 !important ;
+    border-radius: 10px 10px 0px 0px;
     
 }
-.title-squad:hover i{
-    display: block;
-    text-align: center;
-    
-}
-
-
 .scroll-bar{
     overflow-y: auto;
-    height: 79vh;
-    padding-right: 10px;
+    height: 90vh;
 }
 
 body .scroll-bar::-webkit-scrollbar {
-    width: 4px;
+    width: 5px;
+    
 }
 
 body .scroll-bar::-webkit-scrollbar-track {
     background: none;       
     
     margin-bottom: 10px;
-    background-color: #ffffff0e;
-    margin-right: 0px;
-    padding: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    
     
 }
-  
+
 body .scroll-bar::-webkit-scrollbar-thumb {
-    background-color: #ffffff20;    
+    background-color: #ffffff5d;    
     border-radius: 20px;    
-    border: none;  
-    
-    
-    
+    border: none;    
 }
+
 
 
 .vertical-bar {
-    user-select: none;
-    padding: 20px 5px 0px 10px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
     border-radius: 12px;
-    border: 1px solid #ffffff20;
+    user-select: none;
+    height: 100%;
+    
 }
 
-.card{
-    border-radius: 5px 5px 0px 0px;
-    margin-bottom: 10px;
+.task{
+    max-width: 450px;
+}
+
+.bar-squad{
+    max-width: 150px;
+}
+
+.card-user{
+    border-radius: 5px;
+    margin: 0px 5px 5px 5px;
     transition: 200ms;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px) ;
@@ -172,8 +164,7 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 
     background-color: transparent;
     border-radius: 10px;
-    border: none;
-    
+    border: none;    
 }
 
 .perfil .icon{
@@ -205,17 +196,87 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     width:  10px;
     height: 5px;
     border-radius: 10px;
-    background-color: #23d30b;
+    /* background-color: #23d30b; */
 }
 
-.card:hover{
+.card-user:hover{
    background-color: #0e0e0e62 !important ;
 }
 
-.card:hover .btn-attr{
+.card-user:hover .btn-attr{
     opacity: 100%;
     transition: 300ms;
 }
+
+/* task  */
+
+.lb-activity{
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.842);
+    text-align: justify;
+    
+}
+
+
+
+.div-task input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+    opacity: 60%;
+    /* background-color: #4444441e; */
+}
+
+
+.div-task{
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    border: 1px solid #ffffff2c;
+    background-color: #31323594;
+    border-radius: 5px;
+}
+
+.div-task:hover .actions-task{
+    display: flex;
+}
+
+.actions-task{
+    display: none;
+    gap: 5px;
+    position: absolute;
+    right: 15px;
+
+}
+
+.actions-task button{
+    font-size: 0.8rem;
+    border: 1px solid #ffffff7a;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: #ffffff6b;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+.button-edit{
+    color: #f7f7f7;
+}
+ 
+.button-trash{
+    color: #f7f7f7;
+}
+
+.button-edit:hover{
+    color: #f0bb6c;
+    background-color: #3a3a3a;
+}
+ 
+.button-trash:hover{
+    color: #fd6060;
+    background-color: #3a3a3a;
+}
+/* task  */
+
 
 .image-modal{
     width: 100%;
@@ -269,51 +330,3 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     
     background-color: #22d30b34;
 }
-
-/* .modal-body .user-email{
-    font-size: 1rem;
-    font-weight: 600;
-    color: #0b68dffa ;
-    padding: 2px 5px;
-    border-radius: 5px;
-    background-color: #0b68d334;
-}
-
-.modal-body .user-bio{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #3a3a3a ;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: justify;
-    background-color: #0b68d309;
-} */
-
-
-
-
-
-
-
-/* ---- */
-
-.btn-attr{
-    background-color: rgb(128, 172, 41);
-    color: #fff;
-}
-.btn-infos{    
-    background-color: #ffffff2f;
-    color: #ffffff94;
-    
-}
-
-.btn-action{
-
-    padding: 5px 10px;
-    border-radius: 5px;
-    opacity: 0%;
-    border: none;
-    display: flex;
-}
-
-/* estilo barra de tarefas/atividades */

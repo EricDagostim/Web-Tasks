@@ -135,7 +135,7 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 }
 
 .task{
-    max-width: 450px;
+    width: 450px;
 }
 
 .align-task{
@@ -224,7 +224,7 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     text-align: justify;
     border: none !important;
     word-break: break-word;
-
+    width: 100%;
     box-shadow: 0 0 0 0;
     outline: 0;
     
@@ -284,7 +284,7 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 
 }
 
-.button-edit{
+.button-move{
     color: #f7f7f7;
 }
  
@@ -292,9 +292,10 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     color: #f7f7f7;
 }
 
-.button-edit:hover{
+.button-move:hover{
     color: #f0bb6c;
     background-color: #3a3a3a;
+    cursor: grab;
 }
  
 .button-trash:hover{

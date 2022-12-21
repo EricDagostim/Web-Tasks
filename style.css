@@ -80,7 +80,7 @@ main{
     color: #fff;
     text-align: center;
     padding: 10px;
-    opacity: 80%;
+    opacity: 100%;
 }
 
 .principal-title i {
@@ -137,6 +137,13 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 .task{
     max-width: 450px;
 }
+
+.align-task{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
 
 .bar-squad{
     max-width: 150px;
@@ -211,19 +218,33 @@ body .scroll-bar::-webkit-scrollbar-thumb {
 /* task  */
 
 .lb-activity{
-    cursor: pointer;
+    cursor: text;
     border-radius: 5px;
     color: rgba(255, 255, 255, 0.842);
     text-align: justify;
+    border: none !important;
+    word-break: break-word;
+
+    box-shadow: 0 0 0 0;
+    outline: 0;
     
+}
+
+.lb-activity[contenteditable] .div-task{
+    border: 1px solid #11b3f3 !important;
 }
 
 
 
-.div-task input[type="checkbox"]:checked + label{
+.check-task:checked .lb-activity{
     text-decoration: line-through;
-    opacity: 60%;
+    color: #8d8d8d;
     /* background-color: #4444441e; */
+}
+
+.div-task input[type="checkbox"]:hover{
+    cursor: pointer;
+
 }
 
 
@@ -239,12 +260,16 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     display: flex;
 }
 
+.div-task:hover .lb-activity{
+    color: #c4c4c4;
+}
+
 .actions-task{
+    
     display: none;
     gap: 5px;
-    position: absolute;
-    right: 15px;
-
+    justify-content: flex-end;
+    
 }
 
 .actions-task button{
@@ -255,6 +280,7 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     background-color: #ffffff6b;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    margin-bottom: -25px;
 
 }
 

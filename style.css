@@ -357,3 +357,50 @@ body .scroll-bar::-webkit-scrollbar-thumb {
     
     background-color: #22d30b34;
 }
+
+
+
+/* Alertas */
+
+.msg{
+    position: absolute;
+    z-index: 9999;
+    padding: 10px 20px 10px 5px;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.msg-sucess{
+    background-color: #72df2a;
+    color: #2e5c0f;
+    margin-top: 160px;
+}
+
+.msg-error{
+    background-color: #f83f64;
+    color: #410813;
+}
+
+.msg-alert{
+    background-color: #f8dc3f;
+    color: #6b5e12;
+
+    margin-top: 80px;
+}
+
+.msg-icon{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff57;
+}
+
+
+
+
+/* Alertas */

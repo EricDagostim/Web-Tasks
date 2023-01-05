@@ -46,9 +46,20 @@
 
 
         <!-- modals -->
+        <div class="msg msg-sucess">
+            <i class="fa-solid fa-check msg-icon"></i> Atividade cadastrada com sucesso.
+        </div>
 
+        <div class="msg msg-error">
+            <i class="fa-solid fa-triangle-exclamation msg-icon"></i> Não foi possível excluir essa atividade.
+        </div>
+
+        <div class="msg msg-alert">
+            <i class="fa-solid fa-exclamation msg-icon"></i> Usuário ou senha incorreta.
+        </div>
         
         <div class="container-fluid align-bars">
+
             
             <div class="vertical-bar bar-squad">
                
@@ -298,6 +309,8 @@
                         </div>        
                     </div>  
 
+                  
+
                     
  
                 </div>
@@ -326,7 +339,8 @@
     $('#perfil').click(function(){
         $('#modal-user').modal("show");
     });
-  
+
+
     
 </script>
 
